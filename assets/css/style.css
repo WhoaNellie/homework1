@@ -1,0 +1,30 @@
+header {
+  height: 200px;
+  background-color: #3F51B5;
+  position: relative;
+}
+header h1 {
+  text-indent: -9999px;
+  height: 220px;
+  width: 550px;
+  background: url("../images/nellielogo.png") no-repeat;
+}
+header h1 a {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 550px;
+}
+header nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

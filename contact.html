@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nellie Nelson|Contact Me</title>
+    <title>Nellie Nelson | Contact Me</title>
 </head>
 <body>
     <header>
@@ -20,18 +20,21 @@
     </header>
 
     <div class="wrapper">
-        <form action="/form_data/" method="post">
-            <legend>Contact Me</legend>
+        <form action="localhost:8000/form_data" method="post">
+            <fieldset>
+                <legend>Contact Me</legend>
 
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" /><br />
+                <label fnor="name">Name:</label>
+                <input type="text" name="name" id="name" /><br />
 
-            <label for="email">E&hyphen;mail:</label>
-            <input type="text" name="email" id="email" /><br />
+                <label for="email">E&hyphen;mail:</label>
+                <input type="text" name="email" id="email" /><br />
 
-            <label for="info">Message:<br /></label>
-            <textarea name="info" id="info" rows="5" cols="30"></textarea><br />
+                <label for="info">Message:<br /></label>
+                <textarea name="info" id="info" rows="5" cols="30"></textarea><br />
 
+                <button type="submit">Submit</button>
+            </fieldset>
         </form>
 
     </div>

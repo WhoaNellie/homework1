@@ -1,7 +1,9 @@
 body {
   font-family: sans-serif;
-  line-height: 120%;
+  line-height: 140%;
   font-size: 16pt;
+  background-color: #fcf5e4;
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
 
 header {
@@ -57,6 +59,42 @@ header nav ul .portfolio {
 }
 header nav ul .contact {
   background: url("") no-repeat;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 5% auto;
+  padding: 5%;
+  background-color: white;
+  height: 500px;
+  border-radius: 3%;
+}
+.wrapper h2 {
+  font-weight: bold;
+  font-size: 30pt;
+  color: #3F51B5;
+  padding-bottom: 2%;
+  border-bottom: 1px solid grey;
+}
+.wrapper img {
+  border-radius: 50%;
+  border: 20px solid transparent;
+  float: left;
+  shape-outside: circle(50%);
+}
+.wrapper p {
+  margin-top: 20px;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #fcf5e4;
+  border-top: 10px solid #3F51B5;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

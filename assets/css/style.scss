@@ -1,12 +1,21 @@
+$accent-color: #3F51B5;
+$background-color: #fcf5e4;
+$wrapper-color: white;
+
+
+
 body{
     font-family: sans-serif;
-    line-height: 120%;
-    font-size: 16pt;;
+    line-height: 140%;
+    font-size: 16pt;
+    // background-image: url("../images/herringbone.png");
+    background-color: #fcf5e4;
+    background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
 }
 
 header{
     height: 200px;
-    background-color: #3F51B5;
+    background-color: $accent-color;
     position: relative;
 
     h1{
@@ -70,4 +79,45 @@ header{
             }
         }
     }
+}
+
+.wrapper{
+    width: 70%;
+    margin: 5% auto;
+    padding: 5%;
+    background-color: $wrapper-color;
+    height: 500px;
+    border-radius: 3%;
+
+    h2{
+        font-weight: bold;
+        font-size: 30pt;
+        color: $accent-color;
+        //  rgb(36, 45, 97)
+        padding-bottom: 2%;
+        border-bottom: 1px solid grey;
+    }
+
+    img{
+        border-radius: 50%;
+        border: 20px solid transparent;
+        float: left;
+        shape-outside: circle(50%);
+    }
+
+    p{
+        margin-top: 20px;
+    }
+}
+
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: $background-color;
+    border-top: 10px solid $accent-color;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
 }

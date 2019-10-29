@@ -1,3 +1,9 @@
+body{
+    font-family: sans-serif;
+    line-height: 120%;
+    font-size: 16pt;;
+}
+
 header{
     height: 200px;
     background-color: #3F51B5;
@@ -7,6 +13,7 @@ header{
         text-indent: -9999px;
         height: 220px;
         width: 550px;
+        margin-left: 5%;
         background: url("../images/nellielogo.png") no-repeat;
         
         a{
@@ -22,10 +29,45 @@ header{
         position: absolute;
         bottom: 0;
         right: 0;
-        background-color: blue;
+        width: calc(100%/2);
+        height: 100px;
+
         ul{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+
+            li{
+                text-indent: -9999px;
+                position: relative;
+
+                a{
+                    // position: absolute;
+                    display: block;
+                    height: 100px;
+                    width: calc(700px/3);
+                }
+
+                a:hover{
+                    background-color: rgba(128, 128, 128, 0.39);
+                }
+                
+            }
+
+            .current{
+                background-color: rgba(255, 255, 255, 0.288);
+            }
+
+            .about{
+                background: url("../images/about.png")no-repeat;
+            }
+
+            .portfolio{
+                background: url("") no-repeat;
+            }
+
+            .contact{
+                background: url("") no-repeat;
+            }
         }
     }
 }

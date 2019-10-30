@@ -22,7 +22,8 @@ header{
         text-indent: -9999px;
         height: 220px;
         width: 550px;
-        margin-left: 5%;
+        // uncomment this margin if you want the header to look nice on a wide monitor pls, i don't want to do responsive design just for this one thing
+        // margin-left: 5%;
         background: url("../images/nellielogo.png") no-repeat;
         
         a{
@@ -58,12 +59,14 @@ header{
 
                 a:hover{
                     background-color: rgba(128, 128, 128, 0.39);
+                    border-radius: 1%;
                 }
                 
             }
 
             .current{
                 background-color: rgba(255, 255, 255, 0.288);
+                border-radius: 1%;
             }
 
             .about{
@@ -84,17 +87,20 @@ header{
 .wrapper{
     width: 960px;
     margin: 3% auto -50px auto;
-    padding: 5%;
+    padding: 5% 5% 10% 5%;
     background-color: $wrapper-color;
-    height: 500px;
-    border-radius: 3%;
+    overflow: auto;
+    border-radius: 1%;
     border: 1px solid lightgray;
+
+    // for some reason 600px makes the sticky footer not absurdly long
+    min-height: calc(100vh - 600px);
+
 
     h2{
         font-weight: bold;
         font-size: 30pt;
         color: $accent-color;
-        //  rgb(36, 45, 97)
         padding-bottom: 2%;
         // border-bottom: 1px solid grey;
     }
@@ -157,7 +163,7 @@ header{
             font-size: 16pt;
             border: none;
             padding: 5px;
-            margin-top: 10px;
+            margin: 10px 0;
         }
 
     }

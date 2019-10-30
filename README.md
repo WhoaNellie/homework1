@@ -1,4 +1,4 @@
-## Introduction
+## Description
 
 This is my first project for UA's coding bootcamp. It is a portfolio website containing an "about me", projects, and contact page. 
 
@@ -20,7 +20,7 @@ All images are free use, credit to YUI for the reset CSS
 
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2019 Kaylee Nelson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

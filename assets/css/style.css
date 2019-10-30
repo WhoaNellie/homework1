@@ -3,13 +3,15 @@ body {
   line-height: 140%;
   font-size: 16pt;
   background-color: #fcf5e4;
-  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+  background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+  overflow-x: hidden;
 }
 
 header {
   height: 200px;
   background-color: #3F51B5;
   position: relative;
+  border-bottom: 1px solid #32408f;
 }
 header h1 {
   text-indent: -9999px;
@@ -55,19 +57,20 @@ header nav ul .about {
   background: url("../images/about.png") no-repeat;
 }
 header nav ul .portfolio {
-  background: url("") no-repeat;
+  background: url("../images/portfolio.png") no-repeat;
 }
 header nav ul .contact {
-  background: url("") no-repeat;
+  background: url("../images/contact.png") no-repeat;
 }
 
 .wrapper {
-  width: 70%;
-  margin: 5% auto;
+  width: 960px;
+  margin: 3% auto -50px auto;
   padding: 5%;
   background-color: white;
   height: 500px;
   border-radius: 3%;
+  border: 1px solid lightgray;
 }
 .wrapper h2 {
   font-weight: bold;
@@ -85,15 +88,39 @@ header nav ul .contact {
 .wrapper p {
   margin-top: 20px;
 }
+.wrapper .project {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.wrapper .project img {
+  width: 250px;
+  border: none;
+}
+.wrapper .project div {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  background-color: rgba(63, 81, 181, 0.719);
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 25pt;
+  padding: 5px;
+}
+.wrapper .hangman::after {
+  content: "Hangman";
+  background-color: #3F51B5;
+  color: white;
+}
 
 footer {
   height: 80px;
   width: 100%;
   background-color: #fcf5e4;
   border-top: 10px solid #3F51B5;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   text-align: center;
 }
 

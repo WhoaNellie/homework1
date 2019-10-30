@@ -96,7 +96,7 @@ header{
         color: $accent-color;
         //  rgb(36, 45, 97)
         padding-bottom: 2%;
-        border-bottom: 1px solid grey;
+        // border-bottom: 1px solid grey;
     }
 
     img{
@@ -110,12 +110,16 @@ header{
         margin-top: 20px;
     }
 
+    // portfolio images
     .project{
             position: relative;
             width: 250px;
             height: 250px;
             border-radius: 50%;
             overflow:hidden;
+
+            float: left;
+            margin: calc(calc(1100px - 2*74px - 250px*3)/6);
 
         img{
             width: 250px;
@@ -134,13 +138,29 @@ header{
         }
     }
 
+    form{
+        legend{
+            font-weight: bold;
+            font-size: 30pt;
+            color: $accent-color;
+            padding-bottom: 2%;
+        }
 
-    .hangman::after{
-        content: "Hangman";
-        background-color: $accent-color;
-        color: white;
+        input[type=text], textarea{
+            width: 100%;
+            margin: 8px 0;
+        }
+
+        button{
+            background-color: $accent-color;
+            color: white;
+            font-size: 16pt;
+            border: none;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
     }
-
 
 }
 
@@ -149,9 +169,6 @@ footer{
     width: 100%;
     background-color: $background-color;
     border-top: 10px solid $accent-color;
-    // position: fixed;
-    // bottom: 0;
-    // left: 0;
-
     text-align: center;
+    //need to add sticky footer
 }

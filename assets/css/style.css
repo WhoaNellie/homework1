@@ -77,7 +77,6 @@ header nav ul .contact {
   font-size: 30pt;
   color: #3F51B5;
   padding-bottom: 2%;
-  border-bottom: 1px solid grey;
 }
 .wrapper img {
   border-radius: 50%;
@@ -94,6 +93,8 @@ header nav ul .contact {
   height: 250px;
   border-radius: 50%;
   overflow: hidden;
+  float: left;
+  margin: calc(calc(1100px - 2*74px - 250px*3)/6);
 }
 .wrapper .project img {
   width: 250px;
@@ -103,17 +104,30 @@ header nav ul .contact {
   position: absolute;
   bottom: 50px;
   width: 100%;
-  background-color: rgba(63, 81, 181, 0.719);
+  background-color: rgba(63, 81, 181, 0.801);
   color: white;
   font-weight: bolder;
   text-align: center;
   font-size: 25pt;
   padding: 5px;
 }
-.wrapper .hangman::after {
-  content: "Hangman";
+.wrapper form legend {
+  font-weight: bold;
+  font-size: 30pt;
+  color: #3F51B5;
+  padding-bottom: 2%;
+}
+.wrapper form input[type=text], .wrapper form textarea {
+  width: 100%;
+  margin: 8px 0;
+}
+.wrapper form button {
   background-color: #3F51B5;
   color: white;
+  font-size: 16pt;
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
 }
 
 footer {

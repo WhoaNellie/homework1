@@ -4,7 +4,7 @@ This is my first project for UA's coding bootcamp. It is a portfolio website con
 
 ## Installation
 
-To install this project all you need to do is downlaod the repository and open index.html using your browser of choice. Alternatively, you could just go to the github page for this website.
+To install this project all you need to do is download the repository and open index.html using your browser of choice. Alternatively, you could just go to the github page for this website.
 
 ## Usage
 

@@ -117,6 +117,12 @@ header{
     }
 
     // portfolio images
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .project{
             position: relative;
             width: 250px;
@@ -124,7 +130,7 @@ header{
             border-radius: 50%;
             overflow:hidden;
 
-            float: left;
+            // float: left;
             margin: calc(calc(1100px - 2*74px - 250px*3)/6);
 
         img{
